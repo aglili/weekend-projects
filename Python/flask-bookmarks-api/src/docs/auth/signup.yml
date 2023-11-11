@@ -1,0 +1,65 @@
+title: Signup
+description: Please enter your credentials to sign up.
+type: object
+tags:
+  - name: Authentication
+properties:
+  email:
+    type: string
+    format: email
+    description: Your email address.
+    x-placeholder: Enter your email
+  username:
+    type: string
+    description: Your username.
+    x-placeholder: Enter your username
+  password:
+    type: string
+    format: password
+    description: Your password.
+    x-placeholder: Enter your password
+required:
+  - email
+  - username
+  - password
+responses:
+  '200':
+    description: Successful signup
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: JWT access token
+            refresh_token:
+              type: string
+              description: JWT refresh token
+  '401':
+    description: Unauthorized
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            message:
+              type: string
+              description: Error message
+parameters:
+  - in: formData
+    name: email
+    required: true
+    type: string
+    description: Your email address.
+  - in: formData
+    name: username
+    required: true
+    type: string
+    description: Your username.
+  - in: formData
+    name: password
+    required: true
+    type: string
+    format: password
+    description: Your password.

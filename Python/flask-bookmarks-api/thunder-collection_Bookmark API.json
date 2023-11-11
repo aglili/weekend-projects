@@ -1,0 +1,186 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Bookmark API",
+    "dateExported": "2023-11-11T18:21:07.418Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c460483e-56f9-4f03-95cd-94ebc76e0c75",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "SIgn Up",
+            "url": "http://127.0.0.1:5000/auth/sign-up",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-11T14:24:16.523Z",
+            "modified": "2023-11-11T14:25:07.008Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"cyaglili\",\n  \"email\":\"cecilselorm35@gmail.com\",\n  \"password\":\"adonkobitters54\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "597d9c91-5767-4421-9a52-a8eb6d6746fa",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://127.0.0.1:5000/auth/sign-in",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-11T14:25:20.156Z",
+            "modified": "2023-11-11T14:33:25.267Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"cecilselorm34@gmail.com\",\n  \"password\":\"adonkobitters54\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fec5c7e4-ed1b-43dc-94fc-654cd338552f",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "User Profile",
+            "url": "http://127.0.0.1:5000/auth/user",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-11T14:30:31.317Z",
+            "modified": "2023-11-11T14:38:34.642Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTcxMzUwMiwianRpIjoiNTQ3NjI5YjktZWQyNy00MTU5LTk1YWEtYjg4MGRlNWI2ZmZiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjk5NzEzNTAyLCJleHAiOjE2OTk3MTQ0MDJ9.7lDP_8z9vAGqQvAhH2O3n-84RodLYMFeZ6dFP3LYAfU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d7066ea-a0fa-4b83-9f52-4db3023e95dc",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "Refresh Token",
+            "url": "http://127.0.0.1:5000/auth/token/refresh",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-11T14:37:15.958Z",
+            "modified": "2023-11-11T14:38:22.582Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTcxMzIwNSwianRpIjoiY2QwOWVlZjAtOWUzNS00ZmNmLTljNDUtYjI4MzMxZjQ3NGE0IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTY5OTcxMzIwNSwiZXhwIjoxNzAyMzA1MjA1fQ.6NrAAW7oLPBEyVawdpl0PDdtdbWWcNLbFoyjH0JnJ10"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4f9febfa-e257-4c08-a41e-ff3197976253",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "User Bookmarks",
+            "url": "http://127.0.0.1:5000/bookmarks/me?page=1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-11T14:40:54.015Z",
+            "modified": "2023-11-11T16:28:30.791Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTcyMDAzNiwianRpIjoiZTRiM2EyYjEtZDNhYS00Yjc0LWE3YTQtNmMwZWFjY2UxNTZmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjk5NzIwMDM2LCJleHAiOjE2OTk3MjA5MzZ9.WwJdfg9kYh1SMZNX_WjHF53k1_Q20Xwxv7IJ-WR-iDY"
+                }
+            ],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b2db1690-89c9-425b-8fad-b3c02918e1c0",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "Add Bookmark",
+            "url": "http://127.0.0.1:5000/bookmarks/add",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-11T14:55:44.298Z",
+            "modified": "2023-11-11T16:06:56.448Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTcxODU4MiwianRpIjoiMzgyNWNmY2YtNjdkNi00NWU4LWI2OGMtNjk4NjA4MzM0OWMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjk5NzE4NTgyLCJleHAiOjE2OTk3MTk0ODJ9.9--QECldTyJBxFCQUzbcKZHehoerETK7kUVn98OVpiw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"url\":\"https://github.com/fastapi\",\n  \"description\":\"fastapi github\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "09b7165f-7db7-4fc3-acfe-018ed84dcf04",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "Get Bookmark",
+            "url": "http://127.0.0.1:5000/bookmarks/fa65a3a9-afba-49d2-b746-64550088d19",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-11T15:17:47.333Z",
+            "modified": "2023-11-11T16:41:51.636Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTcyMDkwMSwianRpIjoiZDRkZjE3ZTEtNmZkNC00ZWViLThiMDktZDBkYWVlMDRkZmFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjk5NzIwOTAxLCJleHAiOjE2OTk3MjE4MDF9.MceLcdaSz94Dm1KhjmnHzbBQvSloOJ0jzDWV60Uxv-E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "04cea0cd-6a93-4463-9aed-743a0e38bd37",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "Visit Tracking",
+            "url": "http://127.0.0.1:5000/12B5E8",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-11-11T16:36:13.040Z",
+            "modified": "2023-11-11T16:36:13.040Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7a54d403-59aa-4d2f-b8fa-58a800e646e6",
+            "colId": "09fbf246-e199-4a6b-9331-7c311e8c3f94",
+            "containerId": "",
+            "name": "Bookmark Stats",
+            "url": "http://127.0.0.1:5000/bookmarks/stats",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-11-11T16:36:30.483Z",
+            "modified": "2023-11-11T16:48:14.796Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTcyMTI4MiwianRpIjoiMjk4ZDhjNDgtNmExOS00MTcxLTgxMTktNGI0MjcyMzBhYmM5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjk5NzIxMjgyLCJleHAiOjE2OTk3MjIxODJ9.JoBeV38EXY8eQ1cVe3q7f83cqCyMWgVShHDy1yB4u8I"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

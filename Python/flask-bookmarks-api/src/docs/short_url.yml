@@ -1,0 +1,17 @@
+Redirects to a real url
+
+---
+
+tags:
+  - Bookmarks
+parameters:
+  - in: path
+    name: short_url
+    required: true
+    type: string
+
+responses:
+  302:
+    description: Redirects Permanently
+  400:
+    description: Short Url Not Found

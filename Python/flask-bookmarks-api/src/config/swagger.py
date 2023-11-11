@@ -1,0 +1,47 @@
+template = {
+    "swagger": "2.0",
+    "info": {
+        "title": "Bookmarks API",
+        "description": "API for bookmarks",
+        "contact": {
+            "responsibleOrganization": "Me",
+            "responsibleDeveloper": "Aglili Selorm Cecil",
+            "email": "me@gmail.com",
+            "url": "www.me.com",
+        },
+        "termsOfService": "http://me.com/terms",
+        "version": "0.0.1"
+    },
+    "basePath": "/",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "description": """JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"""",
+        }
+    }
+}
+
+
+
+swagger_config = {
+    "headers": [],
+    "specs": [
+        {
+            "endpoint": 'apispec',
+            "route": '/apispec.json',
+            "rule_filter": lambda rule: True,
+            "model_filter": lambda tag: True,
+
+        }
+    ],
+    "static_url_path": "/flasgger_static",
+    "swagger_ui": True,
+    "specs_route": "/"
+
+}
